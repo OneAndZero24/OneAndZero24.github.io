@@ -1,0 +1,4 @@
+# Local development overrides (used by `hugo server`).
+# Serving at the root of localhost keeps the local URL simple:
+# http://localhost:1313/
+baseURL: "http://localhost:1313/"

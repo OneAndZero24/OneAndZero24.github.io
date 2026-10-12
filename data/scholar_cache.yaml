@@ -1,0 +1,50 @@
+# Raw cache of the Google Scholar publication list for Jan Miksa
+# (bTL7lzgAAAAJ). This file is written automatically by
+# scripts/sync_publications.py. It is committed so that the merge step can
+# still run when Scholar is unreachable or rate-limits the request.
+#
+# The content below is a seed snapshot; the next successful sync replaces it.
+fetched_at: "2026-10-12T00:00:00Z"
+source: seed
+scholar_id: bTL7lzgAAAAJ
+items:
+  - scholar_id: "bTL7lzgAAAAJ:u-x6o8ySG0sC"
+    title: "The general framework for few-shot learning by kernel HyperNetworks"
+    authors_raw: "M Sendera, M Przewięźlikowski, J Miksa, M Rajski, K Karanowski, ..."
+    venue_raw: "Machine Vision and Applications 34 (4), 53, 2023"
+    year: 2023
+    num_citations: 12
+    pub_url: ""
+    eprint_url: ""
+  - scholar_id: "bTL7lzgAAAAJ:d1gkVwhDpl0C"
+    title: "InTAct: Interval-based Task Activation Consolidation for Continual Learning"
+    authors_raw: "P Krukowski, J Miksa, P Helm, J Tabor, P Spurek"
+    venue_raw: "arXiv preprint arXiv:2511.17439, 2025"
+    year: 2025
+    num_citations: 1
+    pub_url: ""
+    eprint_url: ""
+  - scholar_id: "bTL7lzgAAAAJ:2osOgNQ5qMEC"
+    title: "CLASP: Continual Low-rank Adapters for Spatially Placed Concepts from One Hypernetwork"
+    authors_raw: "W Gromski, P Krukowski, J Miksa, M Zieba, P Spurek"
+    venue_raw: "arXiv preprint arXiv:2610.01331, 2026"
+    year: 2026
+    num_citations: 0
+    pub_url: ""
+    eprint_url: ""
+  - scholar_id: "bTL7lzgAAAAJ:9yKSN-GCB0IC"
+    title: "BARRIER: Bounded Activation Regions for Robust Information Erasure"
+    authors_raw: "J Miksa, P Krukowski, P Spurek, DD Rymarczyk, M Sendera"
+    venue_raw: "arXiv preprint arXiv:2605.15737, 2026"
+    year: 2026
+    num_citations: 0
+    pub_url: ""
+    eprint_url: ""
+  - scholar_id: "bTL7lzgAAAAJ:u5HHmVD_uO8C"
+    title: "Local learning in deep neural networks"
+    authors_raw: "J Miksa"
+    venue_raw: ""
+    year: 2025
+    num_citations: 0
+    pub_url: ""
+    eprint_url: ""

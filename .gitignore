@@ -1,0 +1,21 @@
+# Hugo build artifacts
+public/
+resources/
+.hugo_build.lock
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# LaTeX auxiliary files (cv.tex and static/cv.pdf are committed on purpose)
+cv/*.aux
+cv/*.log
+cv/*.out
+cv/*.fdb_latexmk
+cv/*.fls
+cv/*.synctex.gz
+
+# macOS
+.DS_Store
+cv/cv.pdf

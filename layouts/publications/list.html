@@ -1,0 +1,31 @@
+{{- define "main" }}
+
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title">{{ .Title }}</h1>
+  </header>
+
+  {{- if .Content }}
+  <div class="post-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+  {{- end }}
+
+  {{- $pubs := site.Data.publications }}
+  {{- with $pubs.items }}
+  <div class="publications">
+    {{- range . }}
+    {{- partial "publication_item.html" . }}
+    {{- end }}
+  </div>
+  {{- end }}
+
+  {{- with $pubs.last_updated }}
+  <p class="pub-updated">Publication list last updated {{ . | time.Format "January 2, 2006" }}.</p>
+  {{- end }}
+</article>
+
+{{- end }}

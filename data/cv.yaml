@@ -1,0 +1,133 @@
+# Curriculum vitae data — the single source of truth for the generated CV.
+#
+# scripts/generate_cv.py renders this file (plus data/publications.yaml)
+# into cv/cv.tex and compiles it to static/cv.pdf. Edit here, then run:
+#
+#     python3 scripts/generate_cv.py
+#
+# Publications are pulled automatically from data/publications.yaml, so they
+# never need to be duplicated here.
+
+name: Jan Miksa
+positioning: Machine Learning Researcher
+
+profile: >
+  I am a Machine Learning Researcher and PhD Student at GMUM Jagiellonian
+  University, currently working at IDEAS Research Institute. My research focuses
+  on continual learning and machine unlearning, with an emphasis on the geometry
+  and modularity of neural representations. I investigate how the structure of
+  hidden representations can be used to control interference between tasks,
+  preserve learned capabilities, and selectively modify neural network behaviour.
+  My work combines mathematical perspectives on neural representations with
+  empirical studies of deep learning systems, including large-scale diffusion
+  models.
+
+contact:
+  email: jan.miksa@protonmail.com
+  phone: "+48 669 266 309"
+  github: "https://github.com/OneAndZero24"
+  linkedin: "https://www.linkedin.com/in/jan-miksa24/"
+  scholar: "https://scholar.google.com/citations?user=bTL7lzgAAAAJ"
+  # Must match baseURL in config/_default/hugo.yaml.
+  website: "https://oneandzero24.github.io/"
+
+research_experience:
+  - org: IDEAS Research Institute
+    role: Senior Machine Learning Research Engineer
+    period: "May 2026 – Present"
+    lead: >
+      Researching continual learning and machine unlearning, with an emphasis on
+      activation-space methods for controlling interference and preserving model
+      behaviour.
+    bullets:
+      - Developing methods that use the geometry and structure of neural activations to support continual adaptation and targeted information removal.
+      - Investigating activation-level constraints and representation-space interventions in diffusion models and other deep neural networks.
+      - Designing and conducting experiments to evaluate forgetting, retention, and changes in model behaviour.
+      - Building tools for efficient activation tracking and analysis to support research on large neural networks.
+  - org: Jagiellonian University — GMUM
+    role: PhD Researcher
+    period: "July 2025 – Present"
+    lead: >
+      Research on continual learning and machine unlearning, focusing on the
+      structure of neural representations and activation-level mechanisms for
+      controlling model updates.
+    bullets:
+      - Investigating representation-space methods for mitigating catastrophic forgetting and enabling targeted changes to learned behaviour.
+      - Developing and evaluating methods based on interval-bounded activations and geometric constraints.
+      - Conducting empirical research on deep neural networks, including diffusion models.
+  - org: NCN grant no. 2023/49/B/ST6/01137
+    role: Researcher
+    period: "October 2025 – October 2026"
+    lead: Unlearning in diffusion models.
+  - org: Jagiellonian University — GMUM
+    role: Graduate Research Assistant
+    period: "October 2023 – July 2025"
+    bullets:
+      - Conducted research in meta-learning, continual learning, and diffusion models.
+      - Designed neural architectures, custom layers, and end-to-end training pipelines.
+      - Explored hypergradient methods, neural optimizers, and consistency models.
+  - org: Jagiellonian University — GMUM
+    role: Undergraduate Research Assistant
+    period: "July 2022 – October 2023"
+    bullets:
+      - Developed Bayesian extensions of meta-learning models.
+      - Designed experiments to investigate uncertainty estimation in learning systems.
+
+industry_experience:
+  - org: Aptiv
+    role: Computer Vision / Machine Learning Engineer
+    period: "April 2025 – April 2026"
+    bullets:
+      - Researched and designed neural network architectures for real-time multi-camera perception.
+      - Implemented custom TensorRT operators and optimized inference performance.
+      - Developed high-performance image-processing pipelines using CUDA and x86 SIMD.
+      - Integrated perception models into real-time systems using low-latency, zero-copy interfaces.
+  - org: OANDA
+    role: Junior Data Scientist
+    period: "September 2024 – December 2024"
+    bullets:
+      - Developed a Bayesian Marketing Mix Model in PyMC, covering model specification, inference, and validation.
+      - Built an interactive Streamlit interface and prepared deployment on Google Cloud Vertex AI.
+  - org: OANDA
+    role: Data Engineer / Associate Data Engineer
+    period: "March 2023 – September 2024"
+    bullets:
+      - Designed and maintained transaction-reporting and data-processing pipelines.
+      - Developed a declarative framework for Apache Beam pipelines and optimized cloud resource utilization.
+  - org: EUROLOOP / Willbert
+    role: Software Developer
+    period: "October 2022 – February 2023"
+    bullets:
+      - Built time-series analytics dashboards (Grafana + InfluxDB) for system monitoring.
+      - Integrated the UI with external systems (payment terminal, invoicing, ads platform).
+  - org: EUROLOOP / Willbert
+    role: Junior Software Developer
+    period: "March 2022 – October 2022"
+    bullets:
+      - Selected the technology and rebuilt the EV charger UI from scratch with a focus on performance and portability.
+      - Designed the UI system architecture supporting concurrent charging sessions.
+
+teaching:
+  - org: Jagiellonian University
+    role: Teaching Assistant
+    period: "September 2025 – Present"
+    bullets:
+      - "Tutoring the artificial intelligence olympiad preparatory class of the [Artificial Intelligence Club](https://gmum.net/ai-scientific-club/) at GMUM, which prepares secondary school students for the [Artificial Intelligence Olympiad](https://www.oai.edu.pl/)."
+
+education:
+  - degree: Doctor of Philosophy in Technical Computer Science
+    org: Jagiellonian University
+    period: "2025 – Present"
+  - degree: Master's Degree in Computational Mathematics
+    org: Jagiellonian University
+    period: "2023 – 2025"
+  - degree: Bachelor's Degree in Computational Mathematics
+    org: Jagiellonian University
+    period: "2020 – 2023"
+
+skills:
+  Core research: [Machine Learning, Deep Learning, Continual Learning, Representation Learning, Computer Vision, Research]
+  Methods and topics: [Machine Unlearning, Transfer Learning, Meta-Learning, Generative Models, Diffusion Models, Neural Networks]
+  Research implementation: [PyTorch, Python, CUDA, Model Optimization, Experimental Design, Scientific Computing]
+  Systems engineering: [C++, TensorRT, High-Performance Computing, GPU Computing, Computer Architecture, Linux, Docker]
+  Additional experience: [Rust, SQL, Google Cloud Platform (GCP), Apache Beam, Data Engineering, Bayesian Statistics]

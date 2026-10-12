@@ -1,0 +1,109 @@
+# Manual overrides and manual-only entries for the publication pipeline.
+#
+# This file is the human-editable layer on top of the automatic Google Scholar
+# sync. The script scripts/sync_publications.py merges it with data fetched
+# from Scholar and writes data/publications.yaml, which is what the website
+# and the CV generator actually read. Edit this file, then run:
+#
+#     python3 scripts/sync_publications.py --offline
+#
+# to regenerate data/publications.yaml without hitting Scholar.
+#
+# How it works:
+#   - "overrides" patches Scholar entries matched by scholar_id (or by title).
+#     Any field listed here replaces the value from Scholar.
+#   - "entries" adds publications that are not on Scholar yet.
+#   - Both accept the same fields: id, title, authors (list), venue,
+#     venue_details, status, status_label, year, links (paper/code/project/
+#     bibtex), summary, tags, citations, featured, order, hidden.
+#   - "order" controls the display order (lower shows first). Items without
+#     an explicit order are sorted after ordered items, by year.
+
+scholar_id: bTL7lzgAAAAJ
+
+overrides:
+  - scholar_id: "bTL7lzgAAAAJ:9yKSN-GCB0IC" # BARRIER
+    id: barrier
+    authors:
+      - "Jan Miksa"
+      - "P. Krukowski"
+      - "P. Spurek"
+      - "D. D. Rymarczyk"
+      - "M. Sendera"
+    venue: "arXiv preprint"
+    status: preprint
+    year: 2026
+    links:
+      paper: "https://arxiv.org/abs/2605.15737"
+      code: "https://github.com/OneAndZero24/BARRIER"
+    summary: "Geometric approach to machine unlearning based on bounded regions in activation space."
+    tags: ["machine unlearning", "representation geometry"]
+    featured: true
+    order: 1
+
+  - scholar_id: "bTL7lzgAAAAJ:d1gkVwhDpl0C" # InTAct
+    id: intact
+    authors:
+      - "P. Krukowski"
+      - "Jan Miksa"
+      - "P. Helm"
+      - "J. Tabor"
+      - "P. Spurek"
+    venue: "NeurIPS"
+    status: accepted
+    year: 2026
+    links:
+      paper: "https://arxiv.org/abs/2511.17439"
+      code: "https://github.com/pkrukowski1/InTAct"
+    summary: "Continual learning through interval-based consolidation of task activations."
+    tags: ["continual learning", "activation consolidation"]
+    featured: true
+    order: 2
+
+  - scholar_id: "bTL7lzgAAAAJ:2osOgNQ5qMEC" # CLASP
+    id: clasp
+    authors:
+      - "W. Gromski"
+      - "P. Krukowski"
+      - "Jan Miksa"
+      - "M. Zieba"
+      - "P. Spurek"
+    venue: "arXiv preprint"
+    status: preprint
+    year: 2026
+    links:
+      paper: "https://arxiv.org/abs/2610.01331"
+    summary: "Continual adaptation of spatially placed concepts using low-rank adapters from a single hypernetwork."
+    tags: ["continual learning", "low-rank adapters"]
+    featured: true
+    order: 3
+
+  - scholar_id: "bTL7lzgAAAAJ:u-x6o8ySG0sC" # kernel HyperNetworks
+    id: kernel-hypernetworks
+    authors:
+      - "M. Sendera"
+      - "M. Przewięźlikowski"
+      - "Jan Miksa"
+      - "M. Rajski"
+      - "K. Karanowski"
+      - "et al."
+    venue: "Machine Vision and Applications"
+    venue_details: "34(4), 53"
+    status: published
+    year: 2023
+    links:
+      paper: "https://doi.org/10.1007/s00138-023-01403-4"
+    summary: "A general framework for few-shot learning with kernel HyperNetworks."
+    tags: ["meta-learning", "few-shot learning"]
+    featured: true
+    order: 4
+
+  - scholar_id: "bTL7lzgAAAAJ:u5HHmVD_uO8C" # Local learning in deep neural networks
+    id: local-learning
+    hidden: true # Hidden by default: Scholar lists no venue. Set to false to show.
+    status: thesis
+    year: 2025
+    tags: ["local learning", "neural networks"]
+    order: 5
+
+entries: []

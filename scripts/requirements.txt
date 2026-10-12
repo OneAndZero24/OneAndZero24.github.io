@@ -1,0 +1,5 @@
+# Python dependencies for the publication sync and CV generation scripts.
+pyyaml>=6.0
+scholarly>=1.7
+# scholarly 1.7.x is incompatible with the bibtexparser 2.x API
+bibtexparser<2

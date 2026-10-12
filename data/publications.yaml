@@ -1,0 +1,101 @@
+scholar_id: bTL7lzgAAAAJ
+scholar_url: https://scholar.google.com/citations?user=bTL7lzgAAAAJ
+scholar_synced_at: '2026-10-12T00:00:00Z'
+last_updated: '2026-10-12T14:42:38Z'
+fetch_error: ''
+items:
+- id: barrier
+  title: 'BARRIER: Bounded Activation Regions for Robust Information Erasure'
+  authors:
+  - Jan Miksa
+  - P. Krukowski
+  - P. Spurek
+  - D. D. Rymarczyk
+  - M. Sendera
+  venue: arXiv preprint
+  status: preprint
+  year: 2026
+  citations: 0
+  scholar_id: bTL7lzgAAAAJ:9yKSN-GCB0IC
+  links:
+    paper: https://arxiv.org/abs/2605.15737
+    code: https://github.com/OneAndZero24/BARRIER
+  summary: Geometric approach to machine unlearning based on bounded regions in activation
+    space.
+  tags:
+  - machine unlearning
+  - representation geometry
+  featured: true
+  order: 1
+  status_label: Preprint
+- id: intact
+  title: 'InTAct: Interval-based Task Activation Consolidation for Continual Learning'
+  authors:
+  - P. Krukowski
+  - Jan Miksa
+  - P. Helm
+  - J. Tabor
+  - P. Spurek
+  venue: NeurIPS
+  status: accepted
+  year: 2026
+  citations: 1
+  scholar_id: bTL7lzgAAAAJ:d1gkVwhDpl0C
+  links:
+    paper: https://arxiv.org/abs/2511.17439
+    code: https://github.com/pkrukowski1/InTAct
+  summary: Continual learning through interval-based consolidation of task activations.
+  tags:
+  - continual learning
+  - activation consolidation
+  featured: true
+  order: 2
+  status_label: Accepted
+- id: clasp
+  title: 'CLASP: Continual Low-rank Adapters for Spatially Placed Concepts from One
+    Hypernetwork'
+  authors:
+  - W. Gromski
+  - P. Krukowski
+  - Jan Miksa
+  - M. Zieba
+  - P. Spurek
+  venue: arXiv preprint
+  status: preprint
+  year: 2026
+  citations: 0
+  scholar_id: bTL7lzgAAAAJ:2osOgNQ5qMEC
+  links:
+    paper: https://arxiv.org/abs/2610.01331
+  summary: Continual adaptation of spatially placed concepts using low-rank adapters
+    from a single hypernetwork.
+  tags:
+  - continual learning
+  - low-rank adapters
+  featured: true
+  order: 3
+  status_label: Preprint
+- id: kernel-hypernetworks
+  title: The general framework for few-shot learning by kernel HyperNetworks
+  authors:
+  - M. Sendera
+  - M. Przewięźlikowski
+  - Jan Miksa
+  - M. Rajski
+  - K. Karanowski
+  - et al.
+  venue: Machine Vision and Applications
+  status: published
+  year: 2023
+  citations: 12
+  scholar_id: bTL7lzgAAAAJ:u-x6o8ySG0sC
+  links:
+    paper: https://doi.org/10.1007/s00138-023-01403-4
+  venue_details: 34(4), 53
+  summary: A general framework for few-shot learning with kernel HyperNetworks.
+  tags:
+  - meta-learning
+  - few-shot learning
+  featured: true
+  order: 4
+  status_label: Published

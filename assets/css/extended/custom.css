@@ -1,0 +1,120 @@
+/* Jan Miksa — site customizations on top of the minimalist academic template */
+
+/* One consistent background color everywhere. By default the theme tints
+   "list" pages (e.g. Publications) slightly darker than single pages. */
+body,
+body.list {
+    background: var(--theme);
+}
+
+/* The homepage now has the same top navigation as every other page. */
+.main .profile {
+    min-height: calc(100vh - var(--header-height) - var(--footer-height) - (var(--gap) * 2));
+}
+
+/* Homepage: breathing room and a clear structure
+   (role line → research text → space → topics) */
+.profile .profile_inner {
+    gap: 14px;
+}
+
+.profile_inner > span {
+    line-height: 1.7;
+}
+
+.profile_inner > span p {
+    margin: 0 0 0.9em;
+}
+
+.profile_inner > span p:last-of-type {
+    margin-top: 2.4em;
+    margin-bottom: 0;
+    color: var(--secondary);
+}
+
+/* Publications */
+.publications {
+    margin-top: 0.5rem;
+}
+
+.pub-item {
+    margin-bottom: 2.4rem;
+}
+
+.pub-title {
+    font-size: 1.12rem;
+    line-height: 1.45;
+    margin: 0 0 0.4rem;
+}
+
+.pub-authors {
+    color: var(--content);
+    font-size: 0.95rem;
+    margin: 0 0 0.35rem;
+}
+
+.pub-me {
+    font-weight: 600;
+}
+
+.pub-meta {
+    color: var(--secondary);
+    font-size: 0.95rem;
+    margin: 0 0 0.4rem;
+}
+
+.pub-meta > span {
+    margin-right: 0.6rem;
+}
+
+.pub-status {
+    display: inline-block;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0.05rem 0.6rem;
+    font-size: 0.8rem;
+    line-height: 1.6;
+}
+
+.pub-status-published,
+.pub-status-accepted {
+    border-color: var(--secondary);
+    color: var(--primary);
+}
+
+.pub-summary {
+    color: var(--secondary);
+    font-size: 0.95rem;
+    margin: 0 0 0.4rem;
+}
+
+.pub-links {
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.pub-citations {
+    color: var(--secondary);
+}
+
+.pub-updated {
+    color: var(--secondary);
+    font-size: 0.85rem;
+    margin-top: 2.5rem;
+}
+
+/* About page */
+.about-photo {
+    float: right;
+    width: 210px;
+    margin: 0.2rem 0 1rem 1.6rem;
+    border-radius: 10px;
+}
+
+@media (max-width: 640px) {
+    .about-photo {
+        float: none;
+        width: 100%;
+        margin: 0 0 1rem;
+    }
+}

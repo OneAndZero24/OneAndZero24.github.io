@@ -1,0 +1,90 @@
+# Jan Miksa — personal research website
+# Documentation of the underlying template: https://pascalmichaillat.org/b/
+baseURL: "https://oneandzero24.github.io/"
+title: Jan Miksa
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+disableKinds: ["taxonomy", "term"]
+pagination:
+  pagerSize: 20
+
+menu:
+    main:
+        - name: Home
+          url: ""
+          weight: 1
+        - name: Publications
+          url: publications/
+          weight: 2
+        - name: Projects
+          url: projects/
+          weight: 3
+        - name: CV
+          url: cv.pdf
+          weight: 4
+
+params:
+    description: "Jan Miksa is a machine learning researcher working on continual learning, machine unlearning, and the geometry of neural representations."
+    author: Jan Miksa
+    # googleAnalyticsID: G-XXXXX
+    DateFormat: January 2006
+    defaultTheme: light
+    hideFooter: false
+    disableThemeToggle: true
+    ShowShareButtons: false
+    ShowReadingTime: false
+    disableSpecial1stPost: true
+    disableAnchoredHeadings: true
+    ShowPostNavLinks: false
+    ShowBreadCrumbs: false
+    ShowCodeCopyButtons: true
+    ShowAllPagesInArchive: false
+    MainSections: [publications]
+    ShowToc: false
+    disableScrollToTop: true
+    TocOpen: true
+    ShowWordCount: false
+    UseHugoToc: true
+    comments: false
+    math: true
+    hideAuthor: true
+    profileMode:
+          enabled: true
+          title: Jan Miksa
+          subtitle: "I am a Machine Learning Researcher and PhD Student at GMUM Jagiellonian University, currently working at IDEAS Research Institute.\n\nMy research focuses on continual learning and machine unlearning, with an emphasis on the geometry and modularity of neural representations. I investigate how the structure of hidden representations can be used to control interference between tasks, preserve learned capabilities, and selectively modify neural network behaviour. My work combines mathematical perspectives on neural representations with empirical studies of deep learning systems, including large-scale diffusion models.\n\n*Machine Learning · Deep Learning · Continual Learning · Unlearning · Computer Vision*"
+          imageUrl: picture.jpeg
+          imageWidth: 180
+          imageHeight: 180
+
+    socialIcons:
+        - name: Email
+          url: mailto:jan.miksa@protonmail.com
+        - name: LinkedIn
+          url: https://www.linkedin.com/in/jan-miksa24/
+        - name: GitHub
+          url: https://github.com/OneAndZero24
+        - name: Google Scholar
+          url: https://scholar.google.com/citations?user=bTL7lzgAAAAJ
+
+    assets:
+        disableScrollBarStyle: true
+    cover:
+        hiddenInList: false
+        hiddenInSingle: true
+
+    footer:
+        hideCopyright: true
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        guessSyntax: true
+        style: autumn
+    tableOfContents:
+        endLevel: 2
+        ordered: false
+        startLevel: 2
