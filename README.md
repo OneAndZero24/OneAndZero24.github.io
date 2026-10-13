@@ -14,7 +14,7 @@ config/_default/hugo.yaml   site configuration (menu, homepage, social links)
 config/development/hugo.yaml local dev override (serves at http://localhost:1313/)
 content/                    homepage copy lives in config; plus:
   publications/_index.md    publications page (rendered from data/)
-  projects.md               ActivationScope
+  projects.md               gmumcl, ActivationScope
 data/
   cv.yaml                   CV source of truth (experience, education, skills)
   publications_manual.yaml  manual overrides + manual-only publications
