@@ -126,8 +126,8 @@ education:
     period: "2020 – 2023"
 
 skills:
-  Core research: [Machine Learning, Deep Learning, Continual Learning, Representation Learning, Computer Vision, Research]
-  Methods and topics: [Machine Unlearning, Transfer Learning, Meta-Learning, Generative Models, Diffusion Models, Neural Networks]
-  Research implementation: [PyTorch, Python, CUDA, Model Optimization, Experimental Design, Scientific Computing]
-  Systems engineering: [C++, TensorRT, High-Performance Computing, GPU Computing, Computer Architecture, Linux, Docker]
-  Additional experience: [Rust, SQL, Google Cloud Platform (GCP), Apache Beam, Data Engineering, Bayesian Statistics]
+  Core research: [Machine Learning, Deep Learning, Computer Vision, Research]
+  Methods and topics: [Machine Unlearning, Continual Learning, Meta-Learning, Generative Models, Diffusion Models]
+  Research implementation: [PyTorch, Python, CUDA, Triton, Scientific Computing]
+  Systems engineering: [C++, TensorRT, Model Optimization, High-Performance Computing, GPU Computing, Linux, Docker]
+  Additional experience: [Rust, SQL, Google Cloud Platform (GCP), Apache Beam, Data Engineering]
