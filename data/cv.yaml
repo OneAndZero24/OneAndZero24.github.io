@@ -33,7 +33,7 @@ contact:
 
 research_experience:
   - org: IDEAS Research Institute
-    role: Senior Machine Learning Research Engineer
+    role: Machine Learning Researcher
     period: "May 2026 – Present"
     lead: >
       Researching continual learning and machine unlearning, with an emphasis on
